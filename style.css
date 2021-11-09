@@ -1,0 +1,668 @@
+:root {
+    --main-text-color: #fff;
+    --second-text-color: #000;
+    --main-background-color: #264653;
+    --second-background-color: #2A9D8F;
+  }
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--main-text-color);
+    line-height: 1.6;
+    background: var(--main-background-color);
+}
+
+img {max-width: 100%;}
+
+
+/* ==================
+    Typography
+===================== */
+
+@media (min-width: 740px) {
+    .mobile-hero {
+        width: 80%;
+        align-self: center;
+    }
+
+    .subtitle {
+        width: 80%;
+        align-self: center;
+    }
+}
+
+body,
+.our-team-text {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+.footer-title,
+.team-card,
+.pages-title
+ {
+    font-family: 'Merriweather', sans-serif;
+}
+
+h1,
+h2,
+strong,
+.our-team-name,
+.our-team-number,
+.our-team-title,
+.footer-title,
+.close-nav,
+label {
+    font-weight: 700;
+}
+
+.hero-title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero-title::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 7px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: var(--second-background-color);
+    border-radius: 10px;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: -.1em;
+}
+
+@media (min-width: 900px) {
+    .hero-title {
+        margin: 0 auto;
+    }
+    .hero-title::after {
+        margin-bottom: .9em;
+    }
+    .subtitle {
+        font-size: 3rem;
+        width: 650px;
+        margin: 0 auto;
+    }
+}
+
+.info-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.info-text {
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.quote {
+    text-align: center;
+    font-size: 1.9rem;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.pages-title {
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.pages-text {
+    line-height: 1.3;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.our-team-name,
+.our-team-number {
+    font-size: 1.25rem;
+}
+
+.footer-title {
+    text-transform: uppercase;
+}
+
+@media (min-width: 750px) {
+    .pages-title {
+        font-size: 2rem;
+    }
+    .pages-text {
+        font-size: 1.25rem;
+    }
+}
+
+/* buttons */
+
+.btn {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: .6em 1.75em;
+    background: var(--second-background-color);
+    border-radius: 6px;
+    align-self: center;
+}
+
+.btn-right, 
+.btn-left {
+    color: var(--main-background-color);
+    background: 0;
+    border: 0;
+    font-size: 3em;
+}
+
+.btn-right:hover,
+.btn-left:hover,
+.circle {
+    cursor: pointer;
+}
+
+
+/* ==================
+    general layout
+===================== */
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 1366px) minmax(1em, 1fr);
+}
+
+/* navigation */
+
+.header {
+    background: var(--second-background-color);
+}
+
+.header-content {
+    display: flex;
+    grid-column: 2 / -2;
+}
+
+.logo {
+    padding: .4em 0;
+    width: 200px;
+    align-self: center;
+}
+
+.nav {
+    position: fixed;
+    background: var(--second-background-color);
+    width: 100%;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0);
+    transition: transform 250ms;
+    overflow: hidden;
+}
+
+.navigation-open {
+    transform: translateX(-100%);
+}
+
+.nav-list {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link,
+.nav-hover {
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--main-background-color);
+}
+
+.close-nav {
+    border: 0;
+    background: 0;
+    color: var(--main-text-color);
+    font-size: 3rem;
+    cursor: pointer;
+    padding: .5em;
+    position: absolute;
+}
+
+.open-nav {
+    border: 0;
+    background: 0;
+    color: var(--main-text-color);
+    cursor: pointer;
+    padding: .5em;
+    margin-left: auto;
+    font-size: 1.7em;
+}
+
+.non-active {
+    display: none;
+}
+
+.nav-item-child {
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+
+    .nav-item-child {
+        display: none;
+        text-align: left;
+    }
+    
+    .open-nav,
+    .close-nav {
+        display: none;
+    }
+
+    .nav {
+        position: initial;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .nav-link,
+    .nav-hover {
+        font-size: .9rem;
+        margin-left: 1.5em;
+    }
+
+    .dropdown-hover {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown-hover:hover .nav-item-child {
+        display: block;
+    }
+
+    @media (min-width: 1000px) {
+
+        .nav-item {
+            margin-left: 2em;
+        }
+        .nav-link,
+        .nav-hover {
+            font-size: 1rem;
+        }
+    }
+}
+
+/* ==================
+    hero area
+===================== */
+
+.hero {
+    color: #fff;
+    height: 95vh;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+@media (min-width: 900px) {
+
+    .hero-container {
+        background-image: url(https://sizoojustin20448.domain.com/Images/Hero.png);
+        background-color: var(--main-background-color);
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(38, 70, 83, .8);
+    }
+
+    .mobile-hero {
+        display: none;
+    }
+
+    .subtitle {
+        margin-bottom: 1em;
+        font-size: 1.75rem; 
+    }
+}
+
+.hero > * {
+    grid-column: 2 / -2;
+}
+
+
+/* ==================
+    info section / contact section
+===================== */
+
+.info,
+.contact,
+.pages {
+    color: var(--second-text-color);
+    padding: 2em 0;
+    background-image: linear-gradient(#EFCC77, #F4A261);
+}
+
+.info > *,
+.contact > *,
+.pages > * {
+    grid-column: 2 / -2;
+}
+
+.info-image {
+    border-bottom: 8px dotted var(--main-background-color);
+    padding-bottom: 2em;
+}
+
+.quote {
+    border-bottom: 8px dashed var(--main-background-color);
+    padding-bottom: .8em;
+    margin-top: 0;
+}
+
+.pic2 {
+    display: none;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: .6em;
+    font-size: 2em;
+}
+
+.fas {
+    color: var(--main-background-color);
+}
+
+.fas,
+.far {
+    padding: 0 2px;
+}
+
+@media (min-width: 900px) {
+    .info,
+    .contact {
+        background-image: none;
+        margin-top: -2em;
+    }
+
+    .info-container,
+    .contact-container,
+    .pages-container {
+        padding: 2em 1em;
+        background-image: linear-gradient(#EFCC77, #F4A261);
+    }
+
+    .info-container {
+        display: grid;
+        grid-gap: 0 1.5em;
+        grid-template-areas: 
+        "title ...."
+        "content pic"
+        "pic2 content1"
+        "content2 content2"
+        "quote quote"
+        "team-title team-title"
+        "team team"
+        "dots dots";
+        align-items: center;
+    }
+
+    .quote {
+        border: none;
+        margin-bottom: 0;
+    }
+
+    .pic {
+        width: 80%;
+        padding-bottom: 0;
+        grid-area: pic;
+    }
+
+    .info-image {
+        border: 0;
+    }
+
+    .team-title {
+        text-align: center;
+    }
+
+    .info-title-main {
+        grid-area: title;
+    }
+
+    .quote {
+        grid-area: quote;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .content1 {
+        grid-area: content1;
+    }
+
+    .content2 {
+        grid-area: content2;
+    }
+
+    .pic2 {
+        grid-area: pic2;
+        display: block;
+        width: 60%;
+        justify-self: center;
+    }
+
+        .team-title {
+        grid-area: team-title;
+    }
+    .our-team-slider {
+        grid-area: team;
+    }
+
+    .circle-container {
+        grid-area: dots;
+    }
+}
+
+@media (min-width: 1250px) {
+    .info-container {
+        grid-template-areas: 
+        "title ..... ....."
+        "..... ...... quote"
+        "content content1 pic2"
+        "pic content2 pic2"
+        "team-title team-title team-title"
+        "team team team"
+        "dots dots dots";
+        align-items: start;
+    }
+
+    .pic {
+        width: 100%;
+        margin-top: -4.5em;
+    }
+
+    .pic2 {
+        width: 100%;
+        align-self: start;
+        margin-top: 1.5em;
+    }
+
+    .info-text {
+        line-height: 1.2;
+        align-self: start;
+    }
+
+    .info-title-main {
+        margin-left: 1em;
+    }
+
+    .quote {
+        margin-bottom: 0;
+        padding-bottom: .5em;
+    }
+
+    .content {
+        margin-left: 1em;
+    }
+
+    .circle-container {
+        grid-area: dots;
+    }
+}
+
+
+/* Our Team */
+
+.team-card {
+    background: var(--main-background-color);
+    border: 3px solid black;
+    color: var(--main-text-color);
+    text-align: center;
+    width: 74%;
+    margin: 0 auto;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+@media (min-width: 900px) {
+    .team-card {
+        padding: 2em;
+        width: 40%;
+    }
+}
+
+.our-team-slider {
+    display: flex;
+}
+
+/* footer */
+
+.footer {
+    background: var(--second-background-color);
+    padding: 1em 0;
+    text-align: left;
+    color: white;
+    margin-top: 2em;
+}
+
+.footer-main,
+.social-list {
+    grid-column: 2 / -2;
+}
+
+.footer-logo {
+    display: none;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+
+}
+
+.social-link {
+    color: white;
+    font-size: 2.4rem;
+    padding-right: 1em;
+}
+
+@media (min-width: 900px) {
+    .footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-logo {
+        display: block;
+        align-self: center;
+    }
+}
+
+/* ==================
+    form
+===================== */
+
+.contact {
+    margin: 2em 0;
+}
+
+.contact-form {
+    display: grid;
+    
+}
+
+input,
+textarea {
+    margin-bottom: .75em;
+    padding: .4em;
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* ==================
+    pages
+===================== */
+
+.pages {
+    margin-top: 2em;
+}
+
+.image {
+    width: 100%;
+    max-width: 475px;
+}
+
+.image-landscape {
+    width: 100%;
+    max-width: 575px;
+}

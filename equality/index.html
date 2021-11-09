@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tikobane | Humane Wildlife Coexistance</title>
+        <!-- viewport meta to render pages on mobile properly -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- link to google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/44ff12035d.js" crossorigin="anonymous"></script>
+        
+        <!-- link to CSS -->
+        <link href="https://sizoojustin20448.domain.com/Style/style.css" rel="stylesheet">
+               <link rel="shortcut icon" href="https://sizoojustin20448.domain.com/Images/Logo.ico" type="image/x-icon">
+        <style>
+        .image {
+                 margin-top: 1em;
+                 width: 80%;
+             }
+             .page-image2 {
+                 display: none;
+             }
+             @media (min-width: 700px) {
+                 .page-image2 {
+                     display: block;
+                 }
+                 .image {
+                     width: 100%;
+                     justify-self: center;
+                 }
+                 .pages-container {
+                     display: grid;
+                     grid-gap: 1em;
+                     grid-template-areas:
+                     "title title"
+                     "text text"
+                     "pic1 pic2";
+                 }
+                 .pages-title {
+                     grid-area: title;
+                 }
+                 .pages-text {
+                     grid-area: text;
+                 }
+                 .page-image1 {
+                     grid-area: pic1;
+                 }
+                 .page-image2 {
+                     grid-area: pic2;
+                 }
+             }
+        </style>
+    </head>
+
+     <body>
+        <header class="header main-grid">
+            <div class="header-content">
+                <img src="https://sizoojustin20448.domain.com/Images/logo.png" alt="" class="logo">
+                <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+                <nav class="nav">
+                    <button aria-label="Close navigation" class="close-nav">&times;</button>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="https://tikobanezimbabwe.org/" class="nav-link">Home</a></li>
+                        <div class="dropdown-hover">
+                            <li class="nav-item"><p class="nav-hover">Social Programs</a></li>
+                                <div class="dropdown-content">
+                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/development/" class="nav-link">Community Development</a></li>
+                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/equality/" class="nav-link">Gender Equality</a></li>
+                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/education/" class="nav-link">Education and Training</a></li>
+                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/recycling/" class="nav-link">Environment and Recycling</a></li>
+                                </div>
+                            </div>
+                        <div class="dropdown-hover">
+                            <li class="nav-item animal"><p class="nav-hover">Animal Programes</a></li>
+                                <div class="dropdown-content">
+                                    <li class="nav-item nav-item-child"><a href="#" class="nav-link">Humane Wildlife Coexistance</a></li>
+                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/conservation/" class="nav-link">Wildlife and Habitat Conservation</a></li>
+                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/animals/" class="nav-link">Animal Welfare</a></li>
+                                 </div>
+                        </div>
+                        <li class="nav-item"><a href="https://tikobanezimbabwe.org/contact/" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section class="pages main-grid">
+                <div class="pages-container">
+                    <h2 class="pages-title">Humane Wildlife Coexistance</h2>
+                    <p class="pages-text">Communities in Matebelend North with highest number of National parks in Zimbabwe (Hwange National park being the largest) are among the poorest in society and they also must bear the costs of living with wildlife with little to no benefit. Our community development programs are focused on improving livelihoods of these communities whose role in conservation is crucial/vital. </p>
+                    <img src="https://sizoojustin20448.domain.com/Images/humane.jpg" alt="" class="image page-image1">
+                    <img src="https://sizoojustin20448.domain.com/Images/humane2.jpg" alt="" class="image page-image2">
+                </div>
+            </section>
+        
+        </main>
+        
+        <footer class="footer main-grid">
+            <img src="https://sizoojustin20448.domain.com/Images/Logo.png" alt="" class="footer-logo logo">
+            <div class="footer-main">
+                <p class="footer-title">Contact Us</p>
+                <p class="footer-info">info@tikobanezimbabwe.org</p>
+                <p class="footer-info"> +263 78 329 7571</p>
+            </div>
+            <div class="footer-main">
+                <p class="footer-title">Located At</p>
+                <p class="footer-info">253 Soweto, Township</p>
+                <p class="footer-info">263 Dete Zimbabwe</p>
+            </div>
+            <ul class="social-list">
+                <li class="social-item"><a href="https://www.facebook.com/Tikobane/" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="social-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                <li class="social-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+    </footer>
+
+    <script src="https://sizoojustin20448.domain.com/script.js"></script>
+</body>
+</html>
