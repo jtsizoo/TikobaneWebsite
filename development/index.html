@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tikobane | Education and Training </title>
+        <title>Tikobane | Community Development</title>
         <!-- viewport meta to render pages on mobile properly -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -15,42 +15,67 @@
         
         <!-- link to CSS -->
         <link href="https://sizoojustin20448.domain.com/Style/style.css" rel="stylesheet">
-         <link rel="shortcut icon" href="https://sizoojustin20448.domain.com/Images/Logo.ico" type="image/x-icon">
-         <style>
-              .pages-container {
-                   display: grid;
-                   grid-gap: 1em 0;
-                   grid-template-areas:
-                   "title"
-                   "pic2"
-                   "text"
-                   "pic1";
-               }
-               .pages-title {
-                   grid-area: title;
-               }
-               .pages-text {
-                   grid-area: text;
-               }
-               .page-image1 {
-                   grid-area: pic1;
-               }
-               .page-image2 {
-                   grid-area: pic2;
-               }
-                .page-image1,
-                .page-image2 {
-                    justify-self: center;
+        <link rel="shortcut icon" href="https://sizoojustin20448.domain.com/Images/Logo.ico" type="image/x-icon">
+        <style>
+           .pages-container {
+               display: grid;
+               grid-gap: 1em 0;
+               grid-template-areas:
+               "title"
+               "pic2"
+               "text1"
+                "pic1"
+                "text2"
+                "pic3";
+           }
+           .pages-title {
+               grid-area: title;
+           }
+           .page-image2 {
+               grid-area: pic2;
+           }
+           .text1 {
+               grid-area: text1;
+           }
+           .page-image1 {
+               grid-area: pic1;
+           }
+           .text2 {
+               grid-area: text2;
+           }
+           .page-image3 {
+               grid-area: pic3;
+           }
+           @media (min-width: 600px) {
+                .pages-container {
+                display: grid;
+                grid-gap: 1em .5em;
+                grid-template-areas:
+                "title title"
+                "text1 text1"
+                "pic1 pic1"
+                "text2 text2"
+                "pic2 pic3";
+            }
+           }
+           @media (min-width: 870px) {
+                .pages-container {
+                    display: grid;
+                    grid-gap: 1em .5em;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas:
+                    "title title"
+                    "pic1 text1"
+                    "pic1 pic2"
+                    "text2 pic3";
                 }
-           @media (min-width: 621px) {
-               .pages-container {
-                   grid-template-columns: 1fr 1fr;
-                   grid-template-areas: 
-                   "title title"
-                   "text text"
-                   "pic1 pic2";
-                   grid-gap: 1em;
-               }
+                .text1,
+                .text2 {
+                    align-self: center;
+                }
+                .page-image2 {
+                    align-self: end;
+                }
            }
         </style>
     </head>
@@ -67,9 +92,9 @@
                         <div class="dropdown-hover">
                             <li class="nav-item"><p class="nav-hover">Social Programs</a></li>
                                 <div class="dropdown-content">
-                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/development/" class="nav-link">Community Development</a></li>
+                                    <li class="nav-item nav-item-child"><a href="#" class="nav-link">Community Development</a></li>
                                     <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/equality/" class="nav-link">Gender Equality</a></li>
-                                    <li class="nav-item nav-item-child"><a href="#" class="nav-link">Education and Training</a></li>
+                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/education/" class="nav-link">Education and Training</a></li>
                                     <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/recycling/" class="nav-link">Environment and Recycling</a></li>
                                 </div>
                             </div>
@@ -90,12 +115,15 @@
         <main>
             <section class="pages main-grid">
                 <div class="pages-container">
-                    <h2 class="pages-title">Education, Training, and Capacity Building</h2>
-                    <p class="pages-text">We are zealous about educating, training, conveying skills and building the capacity of local upcoming conservationists and other conservationists. The victory of conservation tomorrow depends on the type of active conservation leaders we groom today. Our Training and Capacity building projects are focused on: internships, sports, debates, quiz, and public speaking, schools, conservation education, conservation camps sanctuaries, and national park visits.</p>
-                    <img src="https://sizoojustin20448.domain.com/Images/education1.jpg" alt="" class="image-landscape page-image1">
-                    <img src="https://sizoojustin20448.domain.com/Images/education2.jpg" alt="" class="image-landscape page-image2">
+                    <h2 class="pages-title">Community Development</h2>
+                    <p class="pages-text text1">Communities in Matebelend North with highest number of National parks in Zimbabwe (Hwange National park being the largest) are among the poorest in society and they also must bear the costs of living with wildlife with little to no benefit. Our community development programs are focused on improving livelihoods of these communities whose role in conservation is crucial/vital. </p>
+                    <img src="https://sizoojustin20448.domain.com/Images/development1.jpg" alt="" class="image page-image1">
+                    <p class="pages-text text2">We are currently focused on these projects: Animal Sanctuary, Community Gardens, Old Peoples Home cleaning, career guidance, food security and environmental education programs among others</p>
+                    <img src="https://sizoojustin20448.domain.com/Images/development2.jpg" alt="" class="image-landscape page-image2">
+                    <img src="https://sizoojustin20448.domain.com/Images/development3.jpg" alt="" class="image-landscape page-image3">
                 </div>
             </section>
+        
         </main>
         
         <footer class="footer main-grid">
