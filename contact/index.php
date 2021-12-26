@@ -14,14 +14,14 @@
         <script src="https://kit.fontawesome.com/44ff12035d.js" crossorigin="anonymous"></script>
         
         <!-- link to CSS -->
-        <link href="https://sizoojustin20448.domain.com/Style/style.css" rel="stylesheet">
-<link rel="shortcut icon" href="https://sizoojustin20448.domain.com/Images/Logo.ico" type="image/x-icon">
+        <link href="../style.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../Images/Logo.ico" type="image/x-icon">
     </head>
 
      <body>
         <header class="header main-grid">
             <div class="header-content">
-                <img src="https://sizoojustin20448.domain.com/Images/logo.png" alt="" class="logo">
+                <img src="../Images/Logo.png" alt="" class="logo">
                 <button aria-label="Open navigation" class="open-nav">&#9776;</button>
                 <nav class="nav">
                     <button aria-label="Close navigation" class="close-nav">&times;</button>
@@ -66,7 +66,7 @@
         </main>
         
         <footer class="footer main-grid">
-            <img src="https://sizoojustin20448.domain.com/Images/Logo.png" alt="" class="footer-logo">
+            <img src="../Images/Logo.png" alt="" class="footer-logo">
             <div class="footer-main">
                 <p class="footer-title">Contact Us</p>
                 <p class="footer-info">info@tikobanezimbabwe.org</p>
@@ -84,6 +84,6 @@
             </ul>
     </footer>
 
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
     </body>
 </html>
