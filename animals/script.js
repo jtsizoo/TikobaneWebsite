@@ -22,7 +22,7 @@ openButton.addEventListener("click", () => {
 
 
 
-let icons = document.getElementsByClassName("icons");
+let icons = document.getElementsByClassName("icon-container");
 icons[0].addEventListener("click", () => {
     window.scroll({
         top: 1000, 
@@ -90,4 +90,3 @@ let show = function(x,y,num) {
 show(titles[0],contents[0],0);
 show(titles[1],contents[1],0);
 show(titles[2],contents[2],0);
-show(titles[3],contents[3],0);

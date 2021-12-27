@@ -19,35 +19,20 @@
     </head>
 
      <body>
-        <header class="header main-grid">
+     <header class="header main-grid">
             <div class="header-content">
                 <img src="../Images/Logo.png" alt="" class="logo">
-                <button aria-label="Open navigation" class="open-nav">&#9776;</button>
-                <nav class="nav">
-                    <button aria-label="Close navigation" class="close-nav">&times;</button>
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="https://tikobanezimbabwe.org/" class="nav-link">Home</a></li>
-                        <div class="dropdown-hover">
-                            <li class="nav-item"><p class="nav-hover">Social Programs</a></li>
-                                <div class="dropdown-content">
-                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/development/" class="nav-link">Community Development</a></li>
-                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/equality/" class="nav-link">Gender Equality</a></li>
-                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/education/" class="nav-link">Education and Training</a></li>
-                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/recycling/" class="nav-link">Environment and Recycling</a></li>
-                                </div>
-                            </div>
-                        <div class="dropdown-hover">
-                            <li class="nav-item animal"><p class="nav-hover">Animal Programes</a></li>
-                                <div class="dropdown-content">
-                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/humane/" class="nav-link">Humane Wildlife Coexistance</a></li>
-                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/conservation/" class="nav-link">Wildlife and Habitat Conservation</a></li>
-                                    <li class="nav-item nav-item-child"><a href="https://tikobanezimbabwe.org/animals/" class="nav-link">Animal Welfare</a></li>
-                                 </div>
-                        </div>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+                    <nav class="nav">
+                        <button aria-label="Close navigation" class="close-nav">&times;</button>
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="https://tikobanezimbabwe.org/" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="https://tikobanezimbabwe.org/social/" class="nav-link">Social Programs</a></li>
+                            <li class="nav-item"><a href="https://tikobanezimbabwe.org/animals/" class="nav-link">Animal Programs</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link nav-current">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
         </header>
         
         <main>
