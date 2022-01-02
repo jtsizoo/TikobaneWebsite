@@ -1,7 +1,7 @@
 :root {
     --main-text-color: #fff;
     --second-text-color: #000;
-    --main-background-color: #264653;
+    --main-background-color: #12343B;
     --second-background-color: #2A9D8F;
   }
 
@@ -587,6 +587,7 @@ label {
 
 .our-team-slider {
     display: flex;
+    overflow: hidden;
 }
 
 /* footer */
