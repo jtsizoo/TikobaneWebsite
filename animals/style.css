@@ -189,6 +189,15 @@ label,
     }
 }
 
+.image1 {
+    margin-top: 1em;
+    max-width: 80%;
+}
+
+.pages-text{
+    max-width: 90%;
+}
+
 @media (min-width: 675px) {
     .sub-content {
         margin-bottom: 2em;
@@ -278,6 +287,10 @@ label,
         width: 50rem;
     } 
 
+    .img {
+        border: 3px solid black;
+    }
+
     .circles {
         margin-top: .5em;
         font-size: 1.25rem;
@@ -303,6 +316,7 @@ label,
         left: 50%;
         top: 50%;
         transform: translate(-50%, -55%);
+        color: black;
     }
 
     .icon-section-container,

@@ -47,18 +47,27 @@ label,
 .main-title {
     font-size: 2rem;
     margin: 0;
-    text-align: center;
-    border-bottom: 4px solid var(--main-background-color);
+    padding: 0;
 }
 
 .second-title {
-    font-size: 1.15rem;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+.development-title {
+    margin-top: 1.5em;
 }
 
 .pages-text {
     line-height: 1.3;
     font-size: 1.15rem;
     margin: 0;
+    text-align: center;
+    margin-bottom: .8em;
 }
 
 .icon-text {
@@ -71,29 +80,42 @@ label,
     text-transform: uppercase;
 }
 
+.subtitle {
+    font-size: 1.15rem;
+    color: #434343;
+    font-weight: 500;
+    letter-spacing: .03rem;
+    margin: 0;
+    border-bottom: 4px solid var(--main-background-color);
+    margin-top: -.5em;
+    width: 264px;
+}
+
 @media (min-width: 675px) {
-    .second-title {
-        font-size: 1.75rem;
-    }
-}
-
-@media (max-width: 675px) {
-    .second-title {
-        width: 80%;
-        padding: .5em;
-    }
-
-    .second-title:hover {
-        background-color: var(--second-background-color);
-        cursor: pointer;
-        border: 2px solid black;
-        border-radius: 4px;
-    }
-}
-
-@media (min-width: 900px) {
     .main-title {
-        border: 0;
+        border-bottom: 0;
+        font-size: 2.75rem;
+        line-height: 1em;
+        font-weight: 700;
+        width: 100%;
+    }
+    .second-title {
+        font-size: 1.6rem;
+        text-align: left;
+        margin-bottom: .8em;
+    }
+    .pages-text {
+        text-align: left;
+    }
+    .subtitle {
+        margin-top: -.1em;
+        font-size: 1.25rem;
+        width: 365px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .main-title {
         font-size: 3rem;
         width: 10%;
         line-height: 3.2rem;
@@ -102,10 +124,8 @@ label,
         font-size: 3rem;
     }
     .subtitle {
-        font-size: .9rem;
-        color: #434343;
-        font-weight: 500;
-        letter-spacing: .03rem;
+        font-size: 1.35rem;
+        border: 0;
         margin: 0;
     }
     .second-title {
@@ -176,19 +196,30 @@ label,
 }
 
 @media (max-width: 675px) {
-    .development,
-    .equality,
-    .education,
-    .recycling,
-    .animals,
-    .conservation,
-    .humane {
+    .image-landscape {
+        object-fit: cover;
+        width: 100%;
+        height: 19em;
+    }
+
+    .image {
+        object-fit: cover;
+        width: 100%;
+        height: 18em;
+    }
+
+    .d-image1, .g-image2, .ed-image2 {
         display: none;
+    }
+
+    .image-b,
+    .text-b {
+        border-bottom: 4px dashed black;
+        padding-bottom: 2.5em;
     }
 }
 
-@media (max-width: 900px) {
-    .subtitle,
+@media (max-width: 1250px) {
     .img-slider,
     .fa-angle-left,
     .fa-angle-right,
@@ -205,6 +236,9 @@ label,
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 0em 2em;
+    }
+    .equality {
+        grid-gap: 1em 2em;
     }
     .text1,
     .text2 {
@@ -254,7 +288,7 @@ label,
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1250px) {
 
     /* Landing Section */
 
@@ -353,6 +387,7 @@ label,
         height: 20em;
         object-fit: cover;
     }
+
 
     /* Equality Sub-Section */
 
@@ -500,7 +535,7 @@ label,
     text-align: center;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1250px) {
 
     .nav-item-child {
         display: none;
