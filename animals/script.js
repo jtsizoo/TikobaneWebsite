@@ -75,18 +75,3 @@ function SlideShow(n) {
     images[slidePosition-1].style.display = "block";
     circles[slidePosition-1].classList.toggle("fas");
 }
-
-const contents = document.getElementsByClassName("sub-content");
-const titles = document.getElementsByClassName("second-title");
-
-let show = function(x,y,num) {
-    x.addEventListener("click", () => {
-        if(num % 2== 0) y.style.display = "block";
-        else y.style.display = "none";
-        num++;
-  });
-}
-
-show(titles[0],contents[0],0);
-show(titles[1],contents[1],0);
-show(titles[2],contents[2],0);
