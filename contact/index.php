@@ -51,7 +51,7 @@
         </main>
         
         <footer class="footer main-grid">
-            <img src="../Images/Logo.png" alt="" class="footer-logo">
+            <img src="Images/Logo.png" alt="" class="footer-logo logo">
             <div class="footer-main">
                 <p class="footer-title">Contact Us</p>
                 <p class="footer-info">info@tikobanezimbabwe.org</p>
