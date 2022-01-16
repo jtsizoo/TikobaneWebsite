@@ -14,7 +14,7 @@
         <script src="https://kit.fontawesome.com/44ff12035d.js" crossorigin="anonymous"></script>
         
         <!-- link to CSS -->
-        <link href="../style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <link rel="shortcut icon" href="../Images/Logo.ico" type="image/x-icon">
     </head>
 
@@ -39,7 +39,7 @@
             <div class="contact main-grid">
                 <div class="contact-container">
                     <h2 class="info-title">Contact Us</h2>
-                    <form class="contact-form" action="https://sizoojustin20448.domain.com/contact-form.php" method="post">
+                    <form class="contact-form" action="contact-form.php" method="post">
                         <input type="text" name="name" placeholder="Full name">
                         <input type="text" name="mail" placeholder="Your e-mail">   
                         <input type="text" name="subject" placeholder="Subject">   
