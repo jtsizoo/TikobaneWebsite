@@ -38,11 +38,15 @@
         <main>
             <div class="contact main-grid">
                 <div class="contact-container">
-                    <h2 class="info-title">Contact Us</h2>
+                    <h1 class="contact-title">Contact Us</h2>
                     <form class="contact-form" action="contact-form.php" method="post">
+                        <h2 class="form-title">Full Name</h2>
                         <input type="text" name="name" placeholder="Full name">
+                        <h2 class="form-title">Your e-mail</h2>
                         <input type="text" name="mail" placeholder="Your e-mail">   
-                        <input type="text" name="subject" placeholder="Subject">   
+                        <h2 class="form-title">Subject</h2>
+                        <input type="text" name="subject" placeholder="Subject">  
+                        <h2 class="form-title">Message</h2> 
                         <textarea name="message" placeholder="Message"></textarea>
                         <button class="btn" type="submit" name="submit">SEND MAIL</button>
                     </form>
